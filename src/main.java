@@ -48,9 +48,10 @@ public class main {
 
 
         while (true) {
+            System.out.println("Current Generation:");
             game.printGrid();
 
-            System.out.println("Press any key then enter to see next generation or enter 'q' to quit.");
+            System.out.print("Press any key then enter to go to next generation, or 'q' to quit...");
             String input = scanner.next();
 
             if (input.equals("q")) {
@@ -59,6 +60,7 @@ public class main {
 
             game.nextGeneration();
         }
+
+        System.out.println("Thanks for playing!");
     }
 }
-
